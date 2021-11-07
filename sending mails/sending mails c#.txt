@@ -1,0 +1,107 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using System.Net;
+using System.Web;
+using System.Net.Mail;
+
+namespace Prog_Practice3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            try
+            {
+                // from , to , subject , bodt
+                MailMessage message = new MailMessage("hello042hello@gmail.com", "noumanrehman042@gmail.com", "Test", "Salam !");
+                SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+                 
+
+                smtp.Port = 587;
+                  
+                smtp.EnableSsl = true;
+                 
+                smtp.Credentials = new NetworkCredential("hello042hello@gmail.com", "MyPassword");
+                //smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+
+                smtp.Send(message);
+                Console.WriteLine("Mail sent");
+            }
+            catch (Exception) {
+
+                Console.WriteLine("Error");
+            }
+
+        }
+
+        /*
+         
+         #  If you got an SMTP Authentication Error but
+#  your user name / pass was correct. Here is what fixed it. Read this:
+
+# https://support.google.com/accounts/answer/6010255
+
+# In a nutshell, google is not allowing you to log in via smtplib because it has flagged this sort of login as "less secure",
+#  so what you have to do is go to this link while you're logged in to your google account, and allow the access:
+
+# https://www.google.com/settings/security/lesssecureapps     , turn it on from this link
+
+# Once that is set , it should work.
+         https://www.c-sharpcorner.com/article/sending-email-using-c-sharp/
+         
+         */
+    }
+}
+
+
+*********************************
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using System.Net;
+using System.Web;
+using System.Net.Mail;
+
+namespace Prog_Practice3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            try
+            {
+                // from , to , subject , bodt
+                MailMessage message = new MailMessage( );
+                SmtpClient smtp = new SmtpClient();
+                message.From = new MailAddress("hello042hello@gmail.com");
+                message.To.Add(new MailAddress("noumanrehman042@gmail.com"));
+                message.Subject = "Test";                  
+                message.Body = "Salam !";
+
+                smtp.Port = 587;
+                smtp.Host = "smtp.gmail.com"; //for gmail host  
+                smtp.EnableSsl = true;
+                smtp.UseDefaultCredentials = false;
+                smtp.Credentials = new NetworkCredential("hello042hello@gmail.com", "password");
+                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+
+                smtp.Send(message);
+                Console.WriteLine("Mail sent");
+            }
+            catch (Exception) {
+
+                Console.WriteLine("Error");
+            }
+
+        }
+        
+    }
+}

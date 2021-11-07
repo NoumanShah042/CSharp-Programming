@@ -1,0 +1,27 @@
+static class:
+
+1) static class can't be inherited
+2) instance of static class can't be created
+3) cannot declare instance members in a static class
+4) static class cann't have 'INSTANCE'/Non-static constructor, it should be static
+5) Access modifiers are not allowed with static constructors
+6) static classes cannot contain protected members
+
+
+
+
+
+static keyword:
+
+1) static & non-static members can be accessed in 'non-static'/instance functions
+2) only static members can be accessed in static functions
+
+
+
+
+
+
+
+
+
+

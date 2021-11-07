@@ -1,0 +1,15 @@
+abstract 
+
+1) Instance of 'abstract' class can't be created but 'Reference Variable' can be created
+2) Abstract class may have 0 or more 'abstract' methods
+3) abstract method can be without any definition
+4) abstract method can't be private
+5) abstract class can contain non-abstract methods
+6) abstract class can also contain virtual methods
+
+
+
+
+
+
+error in 5-AccessModifiersPrac.cs    file

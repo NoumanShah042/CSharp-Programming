@@ -1,0 +1,18 @@
+add this to system variables:
+
+C:\Windows\Microsoft.NET\Framework\v4.0.30319
+
+
+
+
+
+
+1) csc test.cs        -> it will make test.exe file
+2) test.exe   or  test
+
+
+
+
+
+
+
