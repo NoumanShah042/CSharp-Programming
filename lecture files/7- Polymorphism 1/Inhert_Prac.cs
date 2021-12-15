@@ -46,7 +46,7 @@ namespace Prog_Practice3
             Console.WriteLine("Shape:HideMe()");
         }
 
-        //----------non-abstracr or Concrete function
+        //---------- non-abstracr or Concrete function
         public void Show()
         {
             Console.WriteLine("Shape:Show()");

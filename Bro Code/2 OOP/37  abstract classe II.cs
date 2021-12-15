@@ -34,6 +34,7 @@ namespace MyFirstProgram
                 Console.WriteLine("Rabbit is runner");
             }
         }
+        
         static void Main(string[] args)
         {
             Animal[] arr = new Animal[]

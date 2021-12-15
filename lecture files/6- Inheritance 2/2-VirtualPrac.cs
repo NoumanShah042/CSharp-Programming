@@ -48,27 +48,28 @@ namespace LearnProgramming.Inheritance2
     //This is tester class to Test above classes
     public class Tester2
     {
-        public static void Test()
+        //public static void Test()
+        static void Main(string[] args)
         {
             Console.WriteLine("---------Tester2.Test() Start------------------");
 
             Console.WriteLine("---------Parent obj = new Parent() Starts------------------");
             Parent obj = new Parent();
-            obj.Show1();
+        obj.Show1();
             obj.Show2();
             obj.Show3();
             obj.Show4();
 
             Console.WriteLine("---------Child obj1 = new Child(); Starts------------------");
             Child obj1 = new Child();
-            obj1.Show1();
+        obj1.Show1();
             obj1.Show2();
             obj1.Show3();
             obj1.Show4();
 
             Console.WriteLine("---------Parent obj2 = new Child(); Starts------------------");
             Parent obj2 = new Child();
-            obj2.Show1();
+        obj2.Show1();
             obj2.Show2();
             
             //Here it will go to 'Parent' and will see that 'Show4' is virtual
@@ -85,7 +86,7 @@ namespace LearnProgramming.Inheritance2
 
             Console.WriteLine("---------Tester2.Test() End------------------");
         }
-    }
+}
 }
 
 /*

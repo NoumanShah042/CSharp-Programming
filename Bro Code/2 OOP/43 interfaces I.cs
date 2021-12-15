@@ -12,6 +12,9 @@ namespace MyFirstProgram
             //             An inheriting class defines "how it should do it"
 
             //             benefits = security + multiple inheritance + "plug-and-play"
+            
+            //  methods declared in an interface are by default abstract
+
 
             Rabbit rabbit = new Rabbit();
             Hawk hawk = new Hawk();

@@ -72,7 +72,7 @@ namespace LearnProgramming.Functions
         }
 
         //A function which is taking an 'array', size of array and a number to find in array
-        static int FindElement(int [] arr, int size, int numb)
+        static int FindElement(int[] arr, int size, int numb)
         {
             int index = -1;
             for (int i = 0; i < size; i++)

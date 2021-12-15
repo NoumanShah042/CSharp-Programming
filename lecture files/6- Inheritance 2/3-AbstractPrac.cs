@@ -60,7 +60,8 @@ namespace LearnProgramming.Inheritance2
     //This is tester class to Test above classes
     public class Tester3
     {
-        public static void Test()
+        //public static void Test()
+        static void Main(string[] args)
         {
             Console.WriteLine("---------Tester3.Test() Start------------------");
 
@@ -79,7 +80,7 @@ namespace LearnProgramming.Inheritance2
                 cars[i].BuildCarVirtual();
             }
 
-                Console.WriteLine("---------Tester3.Test() End------------------");
+            Console.WriteLine("---------Tester3.Test() End------------------");
         }
     }
 }

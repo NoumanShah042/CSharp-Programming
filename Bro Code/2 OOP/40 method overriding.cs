@@ -8,7 +8,7 @@ namespace MyFirstProgram
         {
 
             //method overriding = provides a new version of a method inherited from a parent class
-            //                    inherited method must be: abstract, virtual, or already overriden
+            //                    Inherited method must be: abstract, virtual, or already overriden
             //                    Used with ToString(), polymorphism 
 
             Dog dog = new Dog();
@@ -22,7 +22,7 @@ namespace MyFirstProgram
     }
     class Animal
     {
-        
+
         public virtual void Speak()
         {
             Console.WriteLine("The animal goes *brrr*");

@@ -4,7 +4,11 @@ static class:
 2) instance of static class can't be created
 3) cannot declare instance members in a static class
 4) static class cann't have 'INSTANCE'/Non-static constructor, it should be static
-5) Access modifiers are not allowed with static constructors
+---  for Constructor
+5) a static constructor must be parameterless
+7) static constructor is fired whenever first hit is made to any data/function member of the class
+6) Access modifiers are not allowed with static constructors
+
 6) static classes cannot contain protected members
 
 
